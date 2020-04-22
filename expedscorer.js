@@ -326,7 +326,7 @@ function calcWithExpeditionIdsFleetCountJS(fleetCount, priorityManpower, priorit
 function incomeItem(expedItem, expedItemCount, fleetGreatSuccess) {
     if (expedItemCount == 0) return 0;
     if (expedItem == 0) return 0;
-    return fleetGreatSuccess * 0.01 / expedItemCount + (1 - fleetGreatSuccess * 0.01) * expedItem * 0.01;
+    return expedItem * 0.01;
 }
 
 function combine(elements, combineLength, selectedFixedItems) {
